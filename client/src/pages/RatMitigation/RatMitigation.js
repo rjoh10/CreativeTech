@@ -30,7 +30,7 @@ function RatMitigation() {
         <div className='grid-layout'>
           {/* Image */}
           <div className='image-place'>
-            <img src='/public/assets/boston.png' alt='Boston Map'/>
+            <img src='/assets/boston.png' alt='Boston Map'/>
           </div> 
 
           {/* Right Portion */}
