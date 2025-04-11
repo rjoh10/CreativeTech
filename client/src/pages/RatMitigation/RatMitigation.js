@@ -7,60 +7,82 @@ function RatMitigation() {
     <div className="container">
       <div className="header">
         <div className="blue-overlay">
-          <h1 className="header-content">BOSTON'S RAT MITIGATION ZONES</h1>
+          <h1 className="header-content">BOSTON RODENT DATA DASHBOARD</h1>
         </div>
       </div>
 
       <div className="content">
-        <h2>LOREM IPSUM</h2>
+        <h2>Heatmap</h2>
         <p>
-          Lorem ipsum odor amet, consectetuer adipiscing elit. Mi habitant mi
-          maximus quis nulla pretium; fames curae. In at maximus varius
-          ridiculus vestibulum vel elementum imperdiet. Ex at laoreet odio; nisi
-          hendrerit cursus non. Elit phasellus curabitur ultricies est morbi
-          hendrerit. Mus at maecenas habitant aenean dictumst ridiculus in arcu.
-          Eros montes euismod per ut fames justo porttitor.
+          The heatmap is an interactive tool designed to inform residents about
+          Boston's efforts to manage and reduce rodent populations. Developed in
+          collaboration with Northeastern's Scout Labs, this dashboard
+          visualizes real-time rodent activity trends and showcases the city's
+          proactive mitigation strategies. Powered by data from multiple
+          divisions within the Inspectional Services Department (ISD) and Public
+          Works, the dashboard offers clear, actionable insights into the city's
+          ongoing efforts to create cleaner, safer neighborhoods across Boston.
+        </p>
+        <p style={{ marginBottom: "0" }}>
+          Through this tool, residents can:
+          <ul
+            style={{
+              textAlign: "left",
+              listStylePosition: "outside",
+              paddingLeft: "20px",
+            }}
+          >
+            <li>
+              Understand where and how rodent activity is being monitored.
+            </li>
+            <li>
+              Learn about the city’s targeted interventions, such as enhanced
+              waste management solutions and sensor-based tracking.
+            </li>
+            <li>
+              Stay informed about the progress of Boston’s rodent mitigation
+              strategies.
+            </li>
+          </ul>
         </p>
 
-        <div className="grid-layout">
+        <div>
           <div className="heatmap-container">
             <iframe
               src="http://localhost:5006/rodent_dashboard"
               width="100%"
               height="700"
-              frameBorder="0"
               title="Rat Activity Dashboard"
             />
           </div>
 
-          <div className="right-section">
-            <div className="info-card">
-              <h3>311 COMPLAINTS</h3>
-              <p>
-                For rat sighting, mouse sighting, signs of rodents,
-                or conditions attracting rodents
-              </p>
-            </div>
-            <div className="info-card">
-              <h3>HEALTH INSPECTIONS</h3>
-              <p>
-                Initial inspections follow a 311 complaint, or are initiated
-                proactively by the Health Department. Properties that fail may
-                fail for active rat signs, garbage, or conditions that harbor
-                rats. When a property fails an initial inspection, the owner
-                receives an abatement order.
-              </p>
-            </div>
-            <div className="info-card">
-              <h3>HOUSING INSPECTIONS</h3>
-              <p>
-                Initial inspections follow a 311 complaint, or are initiated
-                proactively by the Health Department. Properties that fail may
-                fail for active rat signs, garbage, or conditions that harbor
-                rats. When a property fails an initial inspection, the owner
-                receives an abatement order.
-              </p>
-            </div>
+          <div className="info-card">
+            <h3>311 COMPLAINTS</h3>
+            <p>
+              For rat sighting, mouse sighting, signs of rodents, or conditions
+              attracting rodents
+            </p>
+          </div>
+
+          <div className="info-card">
+            <h3>HEALTH INSPECTIONS</h3>
+            <p>
+              Initial inspections follow a 311 complaint, or are initiated
+              proactively by the Health Department. Properties that fail may
+              fail for active rat signs, garbage, or conditions that harbor
+              rats. When a property fails an initial inspection, the owner
+              receives an abatement order.
+            </p>
+          </div>
+          <div className="info-card">
+            <h3>HOUSING INSPECTIONS</h3>
+            <p>
+              Initial inspections follow a 311 complaint, or are initiated
+              proactively by the Health Department. Properties that fail may
+              fail for active rat signs, garbage, or conditions that harbor
+              rats. When a property fails an initial inspection, the owner
+              receives an abatement order.
+            </p>
           </div>
 
           <div className="bottom-section">
@@ -85,7 +107,7 @@ function RatMitigation() {
             </div>
           </div>
 
-          <div className="BRAP-section">
+          {/* <div className="BRAP-section">
             <div className="info-card">
               <h3>BRAP PROGRESS</h3>
               <p>
@@ -126,6 +148,17 @@ function RatMitigation() {
                 </svg>
               </div>
             </div>
+          </div> */}
+          <div className="cta-container">
+            <a
+              href="https://www.boston.gov/departments/growboston/rodent-management#:~:text=Identifying%20a%20Problem,report%20it%20by%20calling%20311"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rat-button"
+              title="If you see a rodent and would like to report it, click here!"
+            >
+              🐀 Report a Rodent
+            </a>
           </div>
         </div>
       </div>

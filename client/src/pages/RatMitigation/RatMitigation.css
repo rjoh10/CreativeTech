@@ -99,8 +99,8 @@
 .bottom-section {
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    margin-top: 30px;
+    /* gap: 10px; */
+    /* margin-top: 10px; */
 }
 
 .BRAP-section {
@@ -122,6 +122,13 @@
 
 .circle-graph text {
     font-weight: bold;
+}
+
+.top-section {
+    display: flex;
+    flex-direction: column;
+    /* gap: 20px; */
+    /* margin-top: 30px; */
 }
 
 @media (max-width: 768px) {
@@ -161,3 +168,29 @@
       
 
 }
+
+.cta-container {
+    margin-top: 40px;
+    text-align: center;
+  }
+  
+  .rat-button {
+    background-color: rgba(63, 104, 185, 0.8); 
+    color: white;
+    font-weight: bold;
+    padding: 14px 28px;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 18px;
+    display: inline-block;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .rat-button:hover {
+    background-color: rgba(63, 104, 185, 0.8);
+    transform: translateY(-2px);
+    text-decoration: none;
+  }
+  

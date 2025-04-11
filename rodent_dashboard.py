@@ -236,7 +236,12 @@ def create_map(neighborhood, selected_month, use_month_filter):
             'weight': 1,
             'fillOpacity': 0.1 if x['properties']['Name'] != neighborhood else 0.3,
         },
-        highlight=False
+        # highlight_function=False
+        highlight_function=lambda feature: {
+         'weight': 3,
+        'fillOpacity': 0.5
+        }
+
     ).add_to(m)
     
     if heat_data:
