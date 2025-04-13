@@ -134,7 +134,7 @@ body {
 # Custom header to match mockup
 header_html = """
 <div class="header">
-    <h1>BOSTON'S RAT MITIGATION ZONES</h1>
+    <h1>BOSTON RODENT DATA DASHBOARD</h1>
 </div>
 """
 
