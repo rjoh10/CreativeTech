@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "./RatMitigation.css";
 
 function RatMitigation() {
@@ -106,49 +105,6 @@ function RatMitigation() {
               </p>
             </div>
           </div>
-
-          {/* <div className="BRAP-section">
-            <div className="info-card">
-              <h3>BRAP PROGRESS</h3>
-              <p>
-                Lorem ipsum odor amet, consectetuer adipiscing elit. Suscipit
-                cras dis pretium posuere leo curae potenti. Cursus aliquet
-                penatibus potenti, primis ipsum maecenas augue non. Litora
-                congue fringilla magna tincidunt nostra augue.
-              </p>
-              <div className="circle-graph">
-                <svg width="100" height="100">
-                  <circle
-                    cx="50"
-                    cy="50"
-                    r="40"
-                    stroke="lightgray"
-                    strokeWidth="8"
-                    fill="none"
-                  />
-                  <circle
-                    cx="50"
-                    cy="50"
-                    r="40"
-                    stroke="blue"
-                    strokeWidth="8"
-                    fill="none"
-                    strokeDasharray="251.2"
-                    strokeDashoffset="75"
-                  />
-                  <text
-                    x="50"
-                    y="55"
-                    textAnchor="middle"
-                    fontSize="16"
-                    fill="black"
-                  >
-                    70%
-                  </text>
-                </svg>
-              </div>
-            </div>
-          </div> */}
           <div className="cta-container">
             <a
               href="https://www.boston.gov/departments/growboston/rodent-management#:~:text=Identifying%20a%20Problem,report%20it%20by%20calling%20311"

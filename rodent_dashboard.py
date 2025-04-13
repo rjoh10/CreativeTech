@@ -140,7 +140,11 @@ header_html = """
 
 # Add custom CSS to the page
 css_pane = pn.pane.HTML(custom_css)
-header_pane = pn.pane.HTML(header_html)
+header_pane = pn.pane.HTML(
+    header_html,
+    sizing_mode='stretch_width'  
+)
+
 
 # Widgets
 neighborhood_list = sorted(joined["Neighborhood"].unique().tolist())
@@ -345,11 +349,18 @@ control_container = pn.Row(
 layout = pn.Column(
     css_pane,
     header_pane,
-    pn.Column(
-        control_container,
-        iframe,
-        sizing_mode='stretch_width',
-        margin=(0, 20)
+    pn.Row(
+        pn.Column(
+            control_container,
+            sizing_mode='stretch_height',  
+            height_policy='max',
+            margin=(0, 0, 0, 20),           
+        ),
+        pn.Column(
+            iframe,
+            sizing_mode='stretch_both',    
+        ),
+        sizing_mode='stretch_both',      
     ),
     sizing_mode='stretch_width',
     margin=0
