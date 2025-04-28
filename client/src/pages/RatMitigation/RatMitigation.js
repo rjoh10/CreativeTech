@@ -61,6 +61,14 @@ function RatMitigation() {
               For rat sighting, mouse sighting, signs of rodents, or conditions
               attracting rodents
             </p>
+            <div className="iframe-wrapper">
+              <iframe
+                src="/rodent-charts/violations_over_time.html"
+                width="100%"
+                height="600"
+                title="Violations Over Time"
+              />
+            </div>
           </div>
 
           <div className="info-card">
@@ -72,6 +80,14 @@ function RatMitigation() {
               rats. When a property fails an initial inspection, the owner
               receives an abatement order.
             </p>
+            <div className="iframe-wrapper">
+              <iframe
+                src="/rodent-charts/violation_types.html"
+                width="100%"
+                height="600"
+                title="Violations Over Time"
+              />
+            </div>
           </div>
           <div className="info-card">
             <h3>HOUSING INSPECTIONS</h3>
@@ -82,6 +98,14 @@ function RatMitigation() {
               rats. When a property fails an initial inspection, the owner
               receives an abatement order.
             </p>
+            <div className="iframe-wrapper">
+              <iframe
+                src="/rodent-charts/violation_rate.html"
+                width="100%"
+                height="600"
+                title="Violations Over Time"
+              />
+            </div>
           </div>
 
           <div className="bottom-section">
@@ -93,6 +117,14 @@ function RatMitigation() {
                 inspection, the owner is issued a summons. A property may fail
                 for active rat signs, garbage, or conditions that harbor rats.
               </p>
+              <div className="iframe-wrapper">
+              <iframe
+                src="/rodent-charts/neighborhood_selector.html"
+                width="100%"
+                height="600"
+                title="Neighborhood Selector"
+              />
+            </div>
             </div>
             <div className="info-card">
               <h3>ENVIRONMENTAL VIOLATIONS</h3>
@@ -103,6 +135,14 @@ function RatMitigation() {
                 monitor the property to see if remediation is working. The owner
                 is billed for this work.
               </p>
+              <div className="iframe-wrapper">
+              <iframe
+                src="/rodent-charts/proactive_baiting.html"
+                width="100%"
+                height="600"
+                title="Proactive Baiting Over Time"
+              />
+            </div>
             </div>
           </div>
           <div className="cta-container">

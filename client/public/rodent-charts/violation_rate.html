@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    #vis.vega-embed {
+      width: 100%;
+      display: flex;
+    }
+
+    #vis.vega-embed details,
+    #vis.vega-embed details summary {
+      position: relative;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@5.20.1"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 300, "continuousHeight": 300}}, "data": {"name": "data-60afbdd212291d0c8a1146c0c7e659b1"}, "mark": {"type": "line", "point": true}, "encoding": {"tooltip": [{"field": "month", "type": "temporal"}, {"field": "housing_related", "type": "quantitative"}, {"field": "case_reference", "type": "quantitative"}, {"field": "violation_rate", "format": ".2f", "title": "Violation Rate (%)", "type": "quantitative"}], "x": {"field": "month", "title": "Month", "type": "temporal"}, "y": {"field": "violation_rate", "scale": {"zero": false}, "title": "Rodent Violation Rate (%)", "type": "quantitative"}}, "height": 400, "params": [{"name": "param_3", "select": {"type": "interval", "encodings": ["x", "y"]}, "bind": "scales"}], "title": "Rate of Rodent Violations in Housing Inspections", "width": 700, "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json", "datasets": {"data-60afbdd212291d0c8a1146c0c7e659b1": [{"month": "2023-02-01T00:00:00", "housing_related": 21, "case_reference": 218, "violation_rate": 9.63302752293578}, {"month": "2023-03-01T00:00:00", "housing_related": 44, "case_reference": 222, "violation_rate": 19.81981981981982}, {"month": "2023-04-01T00:00:00", "housing_related": 71, "case_reference": 345, "violation_rate": 20.579710144927535}, {"month": "2023-05-01T00:00:00", "housing_related": 80, "case_reference": 433, "violation_rate": 18.475750577367204}, {"month": "2023-06-01T00:00:00", "housing_related": 79, "case_reference": 493, "violation_rate": 16.024340770791078}, {"month": "2023-07-01T00:00:00", "housing_related": 92, "case_reference": 554, "violation_rate": 16.60649819494585}, {"month": "2023-08-01T00:00:00", "housing_related": 127, "case_reference": 568, "violation_rate": 22.359154929577464}, {"month": "2023-09-01T00:00:00", "housing_related": 93, "case_reference": 488, "violation_rate": 19.057377049180328}, {"month": "2023-10-01T00:00:00", "housing_related": 109, "case_reference": 501, "violation_rate": 21.756487025948104}, {"month": "2023-11-01T00:00:00", "housing_related": 81, "case_reference": 390, "violation_rate": 20.76923076923077}, {"month": "2023-12-01T00:00:00", "housing_related": 84, "case_reference": 367, "violation_rate": 22.888283378746593}, {"month": "2024-01-01T00:00:00", "housing_related": 44, "case_reference": 290, "violation_rate": 15.172413793103448}, {"month": "2024-02-01T00:00:00", "housing_related": 68, "case_reference": 326, "violation_rate": 20.858895705521473}, {"month": "2024-03-01T00:00:00", "housing_related": 80, "case_reference": 368, "violation_rate": 21.73913043478261}, {"month": "2024-04-01T00:00:00", "housing_related": 65, "case_reference": 407, "violation_rate": 15.970515970515969}, {"month": "2024-05-01T00:00:00", "housing_related": 67, "case_reference": 474, "violation_rate": 14.135021097046414}, {"month": "2024-06-01T00:00:00", "housing_related": 78, "case_reference": 558, "violation_rate": 13.978494623655912}, {"month": "2024-07-01T00:00:00", "housing_related": 107, "case_reference": 828, "violation_rate": 12.922705314009661}, {"month": "2024-08-01T00:00:00", "housing_related": 125, "case_reference": 909, "violation_rate": 13.751375137513753}, {"month": "2024-09-01T00:00:00", "housing_related": 98, "case_reference": 704, "violation_rate": 13.920454545454545}, {"month": "2024-10-01T00:00:00", "housing_related": 93, "case_reference": 614, "violation_rate": 15.146579804560261}, {"month": "2024-11-01T00:00:00", "housing_related": 45, "case_reference": 388, "violation_rate": 11.597938144329897}, {"month": "2024-12-01T00:00:00", "housing_related": 40, "case_reference": 287, "violation_rate": 13.937282229965156}, {"month": "2025-01-01T00:00:00", "housing_related": 19, "case_reference": 199, "violation_rate": 9.547738693467336}, {"month": "2025-02-01T00:00:00", "housing_related": 20, "case_reference": 163, "violation_rate": 12.269938650306749}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>
