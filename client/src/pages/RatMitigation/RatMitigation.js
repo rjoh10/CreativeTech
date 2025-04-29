@@ -56,10 +56,12 @@ function RatMitigation() {
           </div>
 
           <div className="info-card">
-            <h3>311 COMPLAINTS</h3>
+            <h3>RODENT-RELATED VIOLATIONS</h3>
             <p>
-              For rat sighting, mouse sighting, signs of rodents, or conditions
-              attracting rodents
+              Trends in rodent-related health code violations recorded by Boston Inspectional
+              Services, categorized by neighborhood and reported month. These include confirmed 
+              evidence of infestation, unsanitary conditions, and other public health 
+              violations.
             </p>
             <div className="iframe-wrapper">
               <iframe
@@ -72,13 +74,12 @@ function RatMitigation() {
           </div>
 
           <div className="info-card">
-            <h3>HEALTH INSPECTIONS</h3>
+            <h3>VIOLATION TYPES FROM INSPECTIONS</h3>
             <p>
-              Initial inspections follow a 311 complaint, or are initiated
-              proactively by the Health Department. Properties that fail may
-              fail for active rat signs, garbage, or conditions that harbor
-              rats. When a property fails an initial inspection, the owner
-              receives an abatement order.
+             This chart shows the volume of property violations identified during inspections by the Boston 
+              Inspectional Services Department. Violations are categorized by type—such as housing, 
+              environmental, health, and general issues—and color-coded to reflect their classification. 
+              Inspections may result from 311 complaints or be initiated proactively by the city.
             </p>
             <div className="iframe-wrapper">
               <iframe
@@ -90,13 +91,12 @@ function RatMitigation() {
             </div>
           </div>
           <div className="info-card">
-            <h3>HOUSING INSPECTIONS</h3>
+            <h3>RODENT VIOLATION RATE IN HOUSING INSPECTIONS</h3>
             <p>
-              Initial inspections follow a 311 complaint, or are initiated
-              proactively by the Health Department. Properties that fail may
-              fail for active rat signs, garbage, or conditions that harbor
-              rats. When a property fails an initial inspection, the owner
-              receives an abatement order.
+             This chart shows the percentage of housing inspections that resulted in rodent-related violations 
+             each month. The rate reflects the share of total inspections that identified active signs of rodents, 
+             unsanitary conditions, or contributing factors. Trends over time help assess seasonal changes and the 
+             effectiveness of abatement efforts.
             </p>
             <div className="iframe-wrapper">
               <iframe
@@ -110,12 +110,11 @@ function RatMitigation() {
 
           <div className="bottom-section">
             <div className="info-card">
-              <h3>CODE ENFORCEMENT VIOLATIONS</h3>
+              <h3>RODENT VIOLATIONS BY NEIGHBORHOOD OVER TIME</h3>
               <p>
-                Compliance inspections follow failed initial inspections, 2 to 3
-                weeks after an abatement order. If a property fails a compliance
-                inspection, the owner is issued a summons. A property may fail
-                for active rat signs, garbage, or conditions that harbor rats.
+               This chart tracks monthly rodent-related violations across Boston neighborhoods. Each line represents 
+               one neighborhood, allowing for comparison of trends and hotspots over time. Use the dropdown to focus 
+               on a specific neighborhood or view all for citywide patterns.
               </p>
               <div className="iframe-wrapper">
               <iframe
@@ -127,13 +126,11 @@ function RatMitigation() {
             </div>
             </div>
             <div className="info-card">
-              <h3>ENVIRONMENTAL VIOLATIONS</h3>
+              <h3>PROACTIVE BAITING BY NEIGHBORHOOD OVER TIME</h3>
               <p>
-                The Health Department may send exterminators to visit a
-                property when an owner fails a compliance inspection. These may
-                result in bait applied (rodenticides), or the exterminator may
-                monitor the property to see if remediation is working. The owner
-                is billed for this work.
+                This chart displays the number of rodent baiting activities conducted proactively by Boston's pest control teams.
+                These efforts are not triggered by complaints but are part of scheduled or targeted public health initiatives in 
+                neighborhoods with known rodent issues. Trends reflect how intervention strategies vary over time and location.
               </p>
               <div className="iframe-wrapper">
               <iframe
